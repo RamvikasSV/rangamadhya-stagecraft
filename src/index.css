@@ -8,35 +8,61 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Theatre-inspired color palette */
+    --background: 43 48% 96%;
+    --foreground: 0 0% 0%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 43 48% 96%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 43 48% 96%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Deep Maroon as primary */
+    --primary: 0 60% 24%;
+    --primary-foreground: 43 48% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Burnt Orange as secondary */
+    --secondary: 24 74% 42%;
+    --secondary-foreground: 43 48% 96%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Mustard Yellow as accent */
+    --accent: 45 88% 60%;
+    --accent-foreground: 0 0% 0%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warm Beige as muted */
+    --muted: 43 48% 90%;
+    --muted-foreground: 0 0% 40%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 43 48% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 43 48% 85%;
+    --input: 43 48% 85%;
+    --ring: 0 60% 24%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom theatre colors */
+    --theatre-maroon: 0 60% 24%;
+    --theatre-orange: 24 74% 42%;
+    --theatre-yellow: 45 88% 60%;
+    --theatre-beige: 43 48% 92%;
+    --theatre-gold: 38 70% 55%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--theatre-maroon)), hsl(var(--theatre-orange)));
+    --gradient-cultural: linear-gradient(45deg, hsl(var(--theatre-orange)), hsl(var(--theatre-yellow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--theatre-beige)), hsl(var(--background)));
+
+    /* Shadows */
+    --shadow-theatrical: 0 25px 50px -12px hsl(var(--theatre-maroon) / 0.4);
+    --shadow-warm: 0 10px 30px -10px hsl(var(--theatre-orange) / 0.3);
+    --shadow-cultural: 0 4px 20px hsl(var(--theatre-maroon) / 0.2);
+
+    /* Animations */
+    --transition-theatrical: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s ease;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +127,51 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Theatre-specific gradients */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-cultural {
+    background: var(--gradient-cultural);
+  }
+  
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  /* Theatre shadows */
+  .shadow-theatrical {
+    box-shadow: var(--shadow-theatrical);
+  }
+  
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  
+  .shadow-cultural {
+    box-shadow: var(--shadow-cultural);
+  }
+
+  /* Cultural animations */
+  .transition-theatrical {
+    transition: var(--transition-theatrical);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  /* Interactive effects */
+  .hover-lift {
+    @apply transition-theatrical hover:transform hover:-translate-y-2 hover:shadow-warm;
+  }
+  
+  .cultural-glow {
+    @apply transition-smooth hover:shadow-cultural;
   }
 }
