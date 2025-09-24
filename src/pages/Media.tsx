@@ -5,10 +5,6 @@ import { ExternalLink, Play, Image as ImageIcon, Newspaper } from "lucide-react"
 import heroImage from "@/assets/hero-theatre.jpg";
 import folkTheatreImage from "@/assets/folk-theatre.jpg";
 import workshopImage from "@/assets/workshop.jpg";
-import theatreGroupPhoto from "@/assets/theatre-group-photo.jpg";
-import audiencePhoto from "@/assets/audience-photo.jpg";
-import performanceGroup from "@/assets/performance-group.jpg";
-import candlelightAudience from "@/assets/candlelight-audience.jpg";
 
 const Media = () => {
   const references = [
@@ -37,23 +33,23 @@ const Media = () => {
 
   const gallery = [
     {
-      image: theatreGroupPhoto,
+      image: "/lovable-uploads/7d3f19c1-cfc9-4f23-92c3-e93846d9ccb6.png",
       title: "Theatre Group Celebration",
       description: "Our vibrant theatre community celebrating after a successful performance with traditional costumes and modern attire"
     },
     {
-      image: audiencePhoto,
+      image: "/lovable-uploads/694a68c0-a828-417b-81df-3901b4705840.png",
       title: "Community Engagement",
       description: "Hundreds of community members enjoying our theatrical performances in packed auditoriums"
     },
     {
-      image: performanceGroup,
-      title: "Workshop Sessions",
-      description: "Active participation in our community theatre workshops and training sessions"
+      image: "/lovable-uploads/e295269f-9536-4ea3-8b70-566aa4b86835.png",
+      title: "Workshop & Community Sessions",
+      description: "Active participation in our community theatre workshops and training sessions with performers and audience members"
     },
     {
-      image: candlelightAudience,
-      title: "Cultural Unity",
+      image: "/lovable-uploads/7c31f1e0-d1d1-4852-ae27-8dc6c01229f8.png",
+      title: "Cultural Unity & Candlelight Ceremony",
       description: "Community candlelight gathering representing unity and cultural solidarity through theatre"
     },
     {
