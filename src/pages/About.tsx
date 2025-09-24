@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import folkTheatreImage from "@/assets/folk-theatre.jpg";
+import Testimonials from "@/components/Testimonials";
 
 const About = () => {
   const achievements = [
@@ -58,10 +59,10 @@ const About = () => {
                   Our Mission
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Established in 2018 and officially registered as a trust in 2022, 
-                  Naalvadi Ranga Madhyama stands as a beacon of community-driven 
-                  theatre in Mysuru, Karnataka.
-                </p>
+                   Established in 2018 and registered as a trust on same year 2018, 
+                   Naalvadi Ranga Maadhyama stands as a beacon of community-driven 
+                   theatre in Mysuru, Karnataka.
+                 </p>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                   We believe that theatre is not just entertainment—it's a powerful 
                   tool for social transformation, cultural preservation, and community 
@@ -161,6 +162,9 @@ const About = () => {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <Testimonials />
       </main>
     </div>
   );

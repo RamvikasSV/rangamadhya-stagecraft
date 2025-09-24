@@ -5,6 +5,10 @@ import { ExternalLink, Play, Image as ImageIcon, Newspaper } from "lucide-react"
 import heroImage from "@/assets/hero-theatre.jpg";
 import folkTheatreImage from "@/assets/folk-theatre.jpg";
 import workshopImage from "@/assets/workshop.jpg";
+import theatreGroupPhoto from "@/assets/theatre-group-photo.jpg";
+import audiencePhoto from "@/assets/audience-photo.jpg";
+import performanceGroup from "@/assets/performance-group.jpg";
+import candlelightAudience from "@/assets/candlelight-audience.jpg";
 
 const Media = () => {
   const references = [
@@ -23,7 +27,7 @@ const Media = () => {
       icon: <ExternalLink className="w-5 h-5" />
     },
     {
-      title: "Naalvadi Ranga Madhyama Official",
+      title: "Naalvadi Ranga Maadhyama Official",
       description: "Official organization website with detailed information",
       url: "https://www.naalvadirangamadhyama.org",
       type: "Official Site",
@@ -33,19 +37,34 @@ const Media = () => {
 
   const gallery = [
     {
-      image: heroImage,
-      title: "Traditional Theatre Performance",
-      description: "Captivating moments from our cultural performances showcasing traditional Indian theatre"
+      image: theatreGroupPhoto,
+      title: "Theatre Group Celebration",
+      description: "Our vibrant theatre community celebrating after a successful performance with traditional costumes and modern attire"
+    },
+    {
+      image: audiencePhoto,
+      title: "Community Engagement",
+      description: "Hundreds of community members enjoying our theatrical performances in packed auditoriums"
+    },
+    {
+      image: performanceGroup,
+      title: "Workshop Sessions",
+      description: "Active participation in our community theatre workshops and training sessions"
+    },
+    {
+      image: candlelightAudience,
+      title: "Cultural Unity",
+      description: "Community candlelight gathering representing unity and cultural solidarity through theatre"
     },
     {
       image: folkTheatreImage,
       title: "Folk Theatre Revival",
-      description: "Community engagement through traditional folk theatre forms and storytelling"
+      description: "Traditional folk theatre forms being preserved and performed for modern audiences"
     },
     {
       image: workshopImage,
-      title: "Community Workshops",
-      description: "Hands-on learning experience in our free community theatre workshops"
+      title: "Youth Development",
+      description: "Young participants learning and growing through our comprehensive theatre education programs"
     }
   ];
 
@@ -54,7 +73,7 @@ const Media = () => {
       title: "Theatre as Social Change Agent",
       publication: "Karnataka Cultural Times",
       date: "September 2024",
-      excerpt: "Naalvadi Ranga Madhyama demonstrates how community theatre can drive meaningful social transformation..."
+      excerpt: "Naalvadi Ranga Maadhyama demonstrates how community theatre can drive meaningful social transformation..."
     },
     {
       title: "Preserving Folk Traditions",

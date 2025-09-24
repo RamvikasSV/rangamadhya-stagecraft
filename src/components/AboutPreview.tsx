@@ -35,7 +35,7 @@ const AboutPreview = () => {
                 <span className="text-secondary">Vishwa Manava</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Founded in 2018 and registered as a trust in 2022, Naalvadi Ranga Madhyama 
+                Founded in 2018 and registered as a trust on same year 2018, Naalvadi Ranga Maadhyama 
                 is dedicated to using theatre as a medium for social change and cultural preservation. 
                 We believe in the transformative power of performance arts.
               </p>

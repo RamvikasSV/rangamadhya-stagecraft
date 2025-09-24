@@ -21,7 +21,7 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
             Naalvadi Ranga{" "}
             <span className="text-accent animate-cultural-float inline-block">
-              Madhyama
+              Maadhyama
             </span>
           </h1>
           

@@ -23,7 +23,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
             <h1 className="text-2xl font-bold text-primary">
-              Naalvadi Ranga Madhyama
+              Naalvadi Ranga Maadhyama
             </h1>
           </Link>
 
@@ -40,6 +40,14 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <Link 
+              to="/blog"
+              className={`transition-theatrical text-lg font-medium hover:text-secondary ${
+                isActive("/blog") ? "text-secondary" : "text-foreground"
+              }`}
+            >
+              Blog
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,6 +78,17 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <Link
+              to="/blog"
+              className={`block py-2 px-4 rounded-lg transition-theatrical ${
+                isActive("/blog")
+                  ? "bg-secondary text-secondary-foreground"
+                  : "hover:bg-muted"
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              Blog
+            </Link>
           </div>
         )}
       </div>
