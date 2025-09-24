@@ -33,34 +33,29 @@ const Media = () => {
 
   const gallery = [
     {
-      image: "/lovable-uploads/7d3f19c1-cfc9-4f23-92c3-e93846d9ccb6.png",
-      title: "Theatre Group Celebration",
-      description: "Our vibrant theatre community celebrating after a successful performance with traditional costumes and modern attire"
+      image: "/lovable-uploads/ca7aaf99-2275-4072-8035-198ae1720395.png",
+      title: "Press Coverage - Cultural Recognition",
+      description: "Newspaper coverage highlighting our theatre group's cultural contributions and community impact"
     },
     {
-      image: "/lovable-uploads/694a68c0-a828-417b-81df-3901b4705840.png",
-      title: "Community Engagement",
-      description: "Hundreds of community members enjoying our theatrical performances in packed auditoriums"
+      image: "/lovable-uploads/2baab393-6c5c-4ea7-8488-88dc1d89af24.png",
+      title: "Media Feature - Theatre Excellence",
+      description: "Regional newspaper featuring our innovative theatre methodologies and community outreach programs"
     },
     {
-      image: "/lovable-uploads/e295269f-9536-4ea3-8b70-566aa4b86835.png",
-      title: "Workshop & Community Sessions",
-      description: "Active participation in our community theatre workshops and training sessions with performers and audience members"
+      image: "/lovable-uploads/0e3dfffd-da08-4199-a2d6-fd301857216a.png",
+      title: "Cultural Impact Coverage",
+      description: "Press coverage showcasing our theatre performances and their positive social impact in Karnataka"
     },
     {
-      image: "/lovable-uploads/7c31f1e0-d1d1-4852-ae27-8dc6c01229f8.png",
-      title: "Cultural Unity & Candlelight Ceremony",
-      description: "Community candlelight gathering representing unity and cultural solidarity through theatre"
+      image: "/lovable-uploads/44412b0e-a6a3-423c-8c08-252a9865b651.png",
+      title: "Theatre Movement Documentation",
+      description: "Newspaper documentation of our theatre movement's growth and community engagement initiatives"
     },
     {
-      image: folkTheatreImage,
-      title: "Folk Theatre Revival",
-      description: "Traditional folk theatre forms being preserved and performed for modern audiences"
-    },
-    {
-      image: workshopImage,
-      title: "Youth Development",
-      description: "Young participants learning and growing through our comprehensive theatre education programs"
+      image: "/lovable-uploads/faa809bf-1bb5-4be9-b066-c5db0ec0d109.png",
+      title: "Performance Recognition",
+      description: "Media coverage celebrating our theatrical performances and cultural preservation efforts"
     }
   ];
 
@@ -249,7 +244,7 @@ const Media = () => {
             </p>
             <div className="space-y-4">
               <p className="text-xl">
-                <strong>Dinesh Sir Art</strong>
+                <strong>Dinesh</strong>
               </p>
               <p className="text-theatre-beige">
                 Email: dineshchammalige@gmail.com

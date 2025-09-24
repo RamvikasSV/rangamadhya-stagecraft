@@ -107,7 +107,7 @@ const Contact = () => {
                 <div className="bg-gradient-cultural text-white p-6 rounded-2xl">
                   <h3 className="text-xl font-bold mb-3">Contact Person</h3>
                   <p className="text-white/90 text-lg">
-                    <strong>Dinesh Sir Art</strong>
+                    <strong>Dinesh</strong>
                   </p>
                   <p className="text-white/80 text-sm mt-2">
                     Founder & Artistic Director
